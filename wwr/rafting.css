@@ -64,6 +64,20 @@ article img {
     width: 23px;*/
 /*}
 */
+
+/*
+footer img{
+    width: 30px;
+    margin: 0 5px;
+    border: none;
+}
+footer{
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+}
+*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
@@ -155,35 +169,65 @@ footer img {
   margin: 0 5px;
   border: none;
 }
+header{
+  display: grid;
+  grid-template-areas: 
+    "img nav"
+  ;
+  align-items: center;
+}
+nav a{
+  background-color: burlywood;
+  border: 2px solid whitesmoke;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-footer img{
-    width: 30px;
-    margin: 0 5px;
-    border: none;
+.section-one{
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "paragraph img paragraph-zero"
+  ;
+}
+.section-one h2{
+  grid-area: header;
+  text-align: center;
+}
+.section-one img{
+  grid-area: img;
+  padding-top: 20px;
+  /**z-index: -1;**/
+}
+.p-one{
+  grid-area:paragraph;
+}
+.p-two{
+  grid-area: paragraph-zero;
+  padding-left: 20px;
+}
+.section-two{
+  display: grid;
+  grid-template-areas: 
+    "header header header header header"
+    "img img img img img"
+  ;
+  /**width: 250px;**/
+}
+.section-two h2{
+  grid-area: header;
+  text-align: center;
+  text-decoration: none;
 }
 footer{
-    text-align: center;
+  display: grid;
+  grid-template-areas: 
+    "paragraph a a a"
+  ;
+}
+footer p{
+  grid-area: paragraph;
 }
 footer a{
-    text-decoration: none;
+  text-align: end;
+  padding-left: 0px;
+  margin-left: 2px;
 }
-*/
