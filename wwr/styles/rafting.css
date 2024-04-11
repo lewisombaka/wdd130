@@ -231,3 +231,83 @@ footer a{
   padding-left: 0px;
   margin-left: 2px;
 }
+.main-one{
+  display: grid;
+  grid-template-areas: 
+    "name email"
+    "purpose purpose"
+    "message message"
+    "checkbox checkbox"
+    "submit submit"
+  ;
+  border: 2px solid steelblue;
+  padding: 40px;
+  width: 75%;
+  margin: 20px 20px 20px 0;
+  color: #000;
+}
+form h2{
+  text-decoration: underline;
+}
+form p{
+  color: darkgrey;
+}
+.one{
+  grid-area: name;
+  padding: 2px;
+}
+.two{
+  grid-area: email;
+  padding: 2px;
+}
+.three{
+  grid-area: purpose;
+}
+.four{
+  grid-area: message;
+}
+.five{
+  grid-area: checkbox;
+}
+.six{
+  grid-area: submit;
+  text-align: center;
+}
+iframe{
+  width: 100%;
+  height: auto;
+  border: 2px solid salmon;
+  box-shadow: 2px 2px 2px saddlebrown;
+}
+button{
+  margin: 1rem;
+  background-color: steelblue;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+}
+button:hover{
+  background-color: #00FFFF;
+  box-shadow: 2px 2px 2px steelblue;
+}
+.employees{
+  display: grid;
+  grid-template-areas: 
+  "img1 img2 img3"
+  ;
+}
+.fig-one{
+  grid-area: img1;
+}
+.fig-two{
+  grid-area: img2;
+}
+.fig-three{
+  grid-area: img3;
+}
+.direct-contact{
+  width: 80%;
+  border: 2px solid black;
+  padding: 10px;
+}
