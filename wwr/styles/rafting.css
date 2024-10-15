@@ -1,0 +1,316 @@
+
+/*body{
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+:root{
+    --primary-color:#00FFFF;
+    --secondary-color:#F0FFFF;
+    --accent-color:#89CFF0;
+    --accent-color2:#7393B3;
+
+    --heading-font:'Poppins',serif;
+    --paragraph-font:'Raleway',serif;
+}
+header, footer{
+    background-color: var(--accent-color2);
+    padding: 20px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+    color: var(--accent-color2);
+}
+nav a{
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+p{
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+}
+.hero {
+    position: relative;
+    width: 100%;
+}
+  
+.hero img {
+    display: block;
+    width: 100%;
+    /*height: auto;*/
+/*}
+
+h1 {
+    position: absolute;
+    top: 50%; /* adjust as needed */
+    /*left: 50%; /* adjust as needed */
+/*}
+  
+article {
+    position: absolute;
+    top: 150px; /*adjust as needed */
+    /*left: 50px; /*adjust as needed */
+    /*right: 50px;
+    background-color: blue;
+    border: 2px solid black;
+    padding: 2px;
+
+}
+  
+article img {
+    float: right;
+    margin-left: 10px; /* adjust as needed */
+    /*height: 23px;
+    width: 23px;*/
+/*}
+*/
+
+/*
+footer img{
+    width: 30px;
+    margin: 0 5px;
+    border: none;
+}
+footer{
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color:#00FFFF;
+    --secondary-color:#F0FFFF;
+    --accent-color:#89CFF0;
+    --accent-color2:#7393B3;
+
+    --heading-font:'Poppins',serif;
+    --paragraph-font:'Raleway',serif;
+}
+
+header, footer {
+  background-color: var(--accent-color2);
+  color: white;
+  padding: 20px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+    color: var(--accent-color2);
+}
+p{
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+}
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+article {
+  position: absolute;
+  margin-left: 50%;
+  bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  padding: 10px;
+  max-width: 300px;
+}
+
+article img {
+  float: right;
+  margin-left: 10px;
+}
+
+section {
+  margin-top: 20px;
+}
+
+section img {
+  width: 100%;
+  margin: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+footer img {
+  width: 30px;
+  margin: 0 5px;
+  border: none;
+}
+header{
+  display: grid;
+  grid-template-areas: 
+    "img nav"
+  ;
+  align-items: center;
+}
+nav a{
+  background-color: burlywood;
+  border: 2px solid whitesmoke;
+}
+
+.section-one{
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "paragraph img paragraph-zero"
+  ;
+}
+.section-one h2{
+  grid-area: header;
+  text-align: center;
+}
+.section-one img{
+  grid-area: img;
+  padding-top: 20px;
+  /**z-index: -1;**/
+}
+.p-one{
+  grid-area:paragraph;
+}
+.p-two{
+  grid-area: paragraph-zero;
+  padding-left: 20px;
+}
+.section-two{
+  display: grid;
+  grid-template-areas: 
+    "header header header header header"
+    "img img img img img"
+  ;
+  /**width: 250px;**/
+}
+.section-two h2{
+  grid-area: header;
+  text-align: center;
+  text-decoration: none;
+}
+footer{
+  display: grid;
+  grid-template-areas: 
+    "paragraph a a a"
+  ;
+}
+footer p{
+  grid-area: paragraph;
+}
+footer a{
+  text-align: end;
+  padding-left: 0px;
+  margin-left: 2px;
+}
+.main-one{
+  display: grid;
+  grid-template-areas: 
+    "name email"
+    "purpose purpose"
+    "message message"
+    "checkbox checkbox"
+    "submit submit"
+  ;
+  border: 2px solid steelblue;
+  padding: 40px;
+  width: 75%;
+  margin: 20px 20px 20px 0;
+  color: #000;
+}
+form h2{
+  text-decoration: underline;
+}
+form p{
+  color: darkgrey;
+}
+.one{
+  grid-area: name;
+  padding: 2px;
+}
+.two{
+  grid-area: email;
+  padding: 2px;
+}
+.three{
+  grid-area: purpose;
+}
+.four{
+  grid-area: message;
+}
+.five{
+  grid-area: checkbox;
+}
+.six{
+  grid-area: submit;
+  text-align: center;
+}
+iframe{
+  width: 100%;
+  height: auto;
+  border: 2px solid salmon;
+  box-shadow: 2px 2px 2px saddlebrown;
+}
+button{
+  margin: 1rem;
+  background-color: steelblue;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+}
+button:hover{
+  background-color: #00FFFF;
+  box-shadow: 2px 2px 2px steelblue;
+}
+.employees{
+  display: grid;
+  grid-template-areas: 
+  "img1 img2 img3"
+  ;
+}
+.fig-one{
+  grid-area: img1;
+}
+.fig-two{
+  grid-area: img2;
+}
+.fig-three{
+  grid-area: img3;
+}
+.direct-contact{
+  width: 80%;
+  border: 2px solid black;
+  padding: 10px;
+}
+.employee-images{
+  width: 150px;
+}

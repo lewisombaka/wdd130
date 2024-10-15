@@ -1,0 +1,92 @@
+:root {
+    --heading-color:red;
+    --standard-unit:0;
+}
+*{
+    margin: var(--standard-unit);
+    padding: var(--standard-unit);
+    box-sizing: border-box;
+}
+header, .grid, footer{
+    max-width: 840px;
+    margin: var(--standard-unit) auto;
+}
+nav{
+    background-color: steelblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a{
+    color: white;
+    display: block;
+    padding: 20px;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+.grid{
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer"
+    ;
+
+}
+h1{
+    color: steelblue;
+    border-bottom: 2px solid steelblue;
+}
+img{
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    box-shadow: 0 0 30px gray;
+}
+p{
+    padding: 10px;
+}
+main{
+    max-width: 840px;
+    grid-area: main;
+}
+aside{
+    width: 20rem;
+    text-align: center;
+    position: relative;
+    grid-area: aside;
+}
+aside h2{
+    position: absolute;
+    top: 20px;
+    left: 122px;
+
+}
+aside img{
+    width: 200px;
+    height: auto;
+}
+main img{
+    width: 150px;
+    height: auto;
+    float: right;
+}
+p{
+    padding: 0;
+}
+footer{
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    grid-area: footer;
+}
+/*Class Selectors*/
+.box{
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+}
