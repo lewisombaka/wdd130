@@ -1,3 +1,7 @@
+:root {
+    --standard-size: 2px;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -17,7 +21,7 @@ main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
-    padding: 2px;
+    padding: var(--standard-size);
     box-shadow: 0 0 30px gray;
 }
 
@@ -31,9 +35,9 @@ main {
 
 aside {
     width: 250px;
-    margin: 2px;
-    border: 2px solid darkgray;
-    padding: 2px;
+    margin: var(--standard-size);
+    border: var(--standard-size) solid darkgray;
+    padding: var(--standard-size);
     background-color: aliceblue;
     color: black;
 }
@@ -44,7 +48,7 @@ aside img {
 }
 
 footer {
-    margin-top: 2px;
+    margin-top: var(--standard-size);
     border-top: 1px solid black;
     text-align: center;
 }
