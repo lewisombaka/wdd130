@@ -1,0 +1,20 @@
+:root{
+    --primary-color:#000210;
+    --secondary-color:#080537;
+    --accent1-color:#d7dfff;
+    --accent2-color:#4382ff;
+    --color:whitesmoke;
+}
+
+h1, h2{
+    font-family: ;
+    color: var(--accent2-color);
+}
+
+header a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 820px;
+}
