@@ -7,8 +7,16 @@
 }
 
 h1, h2{
-    font-family: ;
+    /* font-family: ; */
     color: var(--accent2-color);
+}
+
+main img {
+    width: 300px;
+}
+
+footer img {
+    width: 12px;
 }
 
 header a {
