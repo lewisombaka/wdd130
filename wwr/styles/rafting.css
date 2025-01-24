@@ -32,11 +32,18 @@ header a {
     color: var(--accent1-color);
 }
 
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
 body {
     max-width: 820px;
     background-color: var(--primary-color);
     color: var(--accent1-color);
     font-family: Arial, sans-serif;
+    margin: 0 auto;
 }
 
 .hero {
