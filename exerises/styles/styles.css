@@ -29,4 +29,6 @@ html {
     display:flex;
     flex-direction: row-reverse;
     flex-wrap:wrap;
+    /* flex-flow shorthand */
+    /* You can use flex-flow:row wrap; instead of the two above */
   }
