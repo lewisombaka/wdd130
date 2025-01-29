@@ -22,9 +22,11 @@ html {
     padding: 10px;
     margin: 10px;
     background: aqua;
+    flex: 300px;
   }
 
   section {
     display:flex;
-    /*flex-direction: column;*/ /*specifying direction: row is left to right and column is top to bottom*/
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
   }
