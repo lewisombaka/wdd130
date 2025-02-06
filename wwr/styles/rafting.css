@@ -6,6 +6,17 @@
     --color:whitesmoke;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a{
+    border: 2px solid rgb(45,45,45);
+    margin: .1rem;
+}
+
 h1, h2{
     font-family: "Roboto", sans-serif;
     color: var(--accent2-color);
@@ -68,4 +79,30 @@ article {
     width: 180px;
     float: right;
     height: auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.adventure {
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.adventure img {
+    width: 120px;
+}
+
+.adventure img:nth-of-type(2){
+    grid-column: 1fr;
+}
+
+.adventure-header {
+    text-align: center;
 }
