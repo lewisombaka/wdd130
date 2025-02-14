@@ -20,16 +20,19 @@
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
-                <label>What is your favorite browser?</label>
+                <label for="browser">What is your favorite browser?</label>
                 <select name="browser" id="browser">
                     <option value="Brave">Brave</option>
                     <option value="IX Browser">IX Browser</option>
                     <option value="Tor Browser">Tor Browser</option>
                 </select>
-                <label>Do you have a household pet?</label>
-                <input type="checkbox" name="pet" id="pet">Yes
-                <input type="checkbox" name="pet" id="pet">No
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" name="pet" id="pet">
             </fieldset>
+            <label for="feedback">List the places you have lived</label>
+            <textarea name="feedback" id="feedback" placeholder="Nairobi, Siaya, Mombasa" rows="2">
+            </textarea>
+            <button type="submit">Submit Poll</button>
         </form>
     </main>
     <footer>
