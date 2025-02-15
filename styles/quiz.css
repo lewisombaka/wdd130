@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+body {
+    width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form {
+    width: 520px;
+    display: grid;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid gray;
+    background-color: aliceblue;
+    padding: 2rem;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
