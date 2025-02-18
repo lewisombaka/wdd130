@@ -293,6 +293,47 @@ label {
     border-radius: 5px;
 }
 
+.cta-trip {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cta-trip-button {
+    padding: 10px 20px;
+    background-color: var(--accent2-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.trip {
+    margin: 20px;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th, .trips-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.trips-table th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+
 @media (max-width: 768px) {
     .info-grid {
         grid-template-columns: 1fr;
