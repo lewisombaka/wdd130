@@ -202,4 +202,9 @@ label {
 
 .wireframe a {
     color: var(--color);
+    text-decoration: none;
+}
+
+.wireframe a:hover {
+    border-bottom: 1px dashed darksalmon;
 }
