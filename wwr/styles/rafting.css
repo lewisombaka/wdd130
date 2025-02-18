@@ -13,8 +13,12 @@ header {
 }
 
 header a{
-    border: 2px solid rgb(45,45,45);
+    /* border: 2px solid rgb(45,45,45); */
     margin: .1rem;
+}
+
+header a:hover {
+    border-bottom: 1px dashed darksalmon;
 }
 
 h1, h2{
@@ -87,6 +91,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border-top: 1px solid var(--color);
+    margin-top: .8rem;
 }
 
 form {
@@ -143,7 +149,7 @@ input {
 button {
     background-color: #001d56;
     border: none;
-    color: aliceblue;
+    color: var(--color);
     padding: .5rem;
     border-radius: .5rem;
 }
@@ -183,4 +189,17 @@ label {
 
 .employee img {
     width: 200px;
+}
+
+.details a {
+    color: var(--color);
+}
+
+.wireframe {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.wireframe a {
+    color: var(--color);
 }
