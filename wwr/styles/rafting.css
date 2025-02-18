@@ -171,3 +171,7 @@ label {
     gap: 8px; /* Adjust space between radio and label */
     margin-bottom: 5px; /* Space between each option */
 }
+
+.employee img {
+    width: 200px;
+}
