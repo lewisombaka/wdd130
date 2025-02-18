@@ -89,6 +89,13 @@ footer {
     justify-content: space-around;
 }
 
+form {
+    border: 1px dashed lightblue;
+    border-radius: .5rem;
+    width: 520px;
+    margin: 0 auto;
+}
+
 .adventure {
     display: flex;
     align-items: center;
